@@ -2,6 +2,19 @@ Youtube
 https://www.youtube.com/watch?v=5pBcKKiZSGE
 https://www.youtube.com/watch?v=BN6fH1nRDxA
 https://www.youtube.com/watch?v=gXkqy0b4M5g&t=638s
+https://www.youtube.com/watch?v=n0PQHRylhqA&t=1251s
+https://www.youtube.com/watch?v=SRPktOpHknM&t=2756s
+https://www.youtube.com/watch?v=HV7DtH3J2PU
+https://www.youtube.com/watch?v=ex7jGbyFgpA&t=12s
+https://www.youtube.com/watch?v=IFai8qTKvEM&t=604s
+https://www.youtube.com/watch?v=aH0Xdkk3jmM&t=97s
+https://www.youtube.com/watch?v=V0O4pY2xX10
+https://www.youtube.com/watch?v=3UtB4QS6EAg&t=2739s
+https://www.youtube.com/watch?v=vvgOPJQA8Zk
+https://www.youtube.com/watch?v=PLvYfEFRwfY
+https://www.youtube.com/watch?v=bnyFbo2eSLI
+https://www.youtube.com/user/WebMagistersRu
+https://www.youtube.com/watch?v=kJIYjCW7uw0
 Bootstrap
 https://getbootstrap.com/docs/4.3/getting-started/download/
 Plugins
@@ -11,4 +24,4 @@ https://fontawesome.com/v4.7.0/
 GOOOGLE
 https://htmldog.com/guides/
 https://www.w3schools.com/html/html_scripts.asp 
-more and more
+https://www.w3schools.com/php/
