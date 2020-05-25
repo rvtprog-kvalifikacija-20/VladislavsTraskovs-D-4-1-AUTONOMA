@@ -10,36 +10,37 @@ if(isset($_POST['submit']))
     $email=$_SESSION['email'];
     $password=md5($_POST['newpassword']);
 
-        $query=mysqli_query($con,"update user set Password='$password'  where  Email='$email' && MobileNumber='$contactno' ");
+        $query=mysqli_query($con,"update admin set Password='$password'  where  Email='$email' && MobileNumber='$contactno' ");
    if($query)
    {
-echo "<script>alert('Parole veiksmigi ir izmainita');</script>";
+echo "<script>alert('Parole veiksmigi nomainita');</script>";
 session_destroy();
    }
   
   }
   ?>
-
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html lang="en">
 
 <head>
-   
-
-    <title>Atjaunot parole</title>
-
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>Admin panele | Atjaunot parole</title>
+    
  
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+ 
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+   
+    <link href="css/fontawesome-all.css" rel="stylesheet">
   
-    <link href="style.css" rel="stylesheet">
-
+    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  
     <script type="text/javascript">
 function checkpass()
 {
 if(document.changepassword.newpassword.value!=document.changepassword.confirmpassword.value)
 {
-alert('Jauna porole un apstiprinajuma porole ne sakrit!');
+alert('Jaua parole un parole apstiprinajums ne sakrit!');
 document.changepassword.confirmpassword.focus();
 return false;
 }
@@ -50,53 +51,43 @@ return true;
 </head>
 
 <body>
-
-   <?php include_once('includes/header.php');?>
-
-    <section id="lgoin-page-wrap" class="section-padding">
+    <div class="bg-page py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-8 m-auto">
-                	<div class="login-page-content">
-                		<div class="login-form">
-                			<h3>Ievadiet jauno parole</h3>
-							<form action="" method="post" name="changepassword" onsubmit="return checkpass();" id="changepassword">
-                                <p style="font-size:16px; color:red" align="center"> <?php if($msg){
+            
+            <h2 class="main-title-w3layouts mb-2 text-center text-white">Atjaunot parole</h2>
+           
+            <div class="form-body-w3-agile text-center w-lg-50 w-sm-75 w-100 mx-auto mt-5">
+                <form action="#" method="post" name="changepassword" onsubmit="return checkpass();">
+                    <p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-								<div class="username">
-									<input type="password"placeholder="Jauna parole" name="newpassword" id="newpassword" required="true">
+                    <div class="form-group">
+                        <label>Jauna parole</label>
+                      
+                       <input class="form-control" type="password" required="true" name="newpassword">
+                    </div>
+                    <div class="form-group">
+                        <label>Apstiprinat parole</label>
+                        
+                        <input class="form-control" type="password" name="confirmpassword" required="true" >
+                    </div>
+                    <div class="d-sm-flex justify-content-between">
+                        
+                        <div class="forgot col-md-6 text-sm-left text-center">
+                            <a href="login.php">Ieiet</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary error-w3l-btn mt-sm-5 mt-3 px-4" value="Sign In" name="submit">Reset</button>
+                </form>
+                
+                <h1 class="paragraph-agileits-w3layouts mt-2">
+                    <a href="../index.php">Atgriezties majas lapa</a>
+                </h1>
+            </div>
 
-								</div>
-								<div class="password">
-									<input type="password" placeholder="Apstiprinat jauno porole" name="confirmpassword" id="confirmpassword" required="true">
-								</div>
-								<div class="log-btn">
-									<button type="submit" name="submit"><i class="fa fa-sign-in"></i> Apstiprinat</button>
-								</div>
-							</form>
-                		</div>
-                		
-                		<div class="login-other">
-                			<span class="vai">vai</span>
-                			<a href="login.php" class="login-with-btn facebook"> Iejiet</a>
-                			</div>
-                		<div class="create-ac">
-                			<p>Ne esat registrets? <a href="register.php">Registracija</a></p>
-                		</div>
-                		<div class="login-menu">
-                			<a href="about.php">Par mums</a>
-                			<span>|</span>
-                			<a href="contact.php">Kontakti</a>
-                		</div>
-                	</div>
-                </div>
-        	</div>
+           <?php include_once('includes/footer.php');?>
         </div>
-    </section>
-
-
-  <?php include_once('includes/footer.php');?>
+    </div>
 
 
 </body>
