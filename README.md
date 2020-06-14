@@ -21,3 +21,11 @@ Uzstādīšanas instrukcijas: Lejupielādēt projektu un sekojiet instrukcijai z
 1.	Pārnesam mapi WlaCar uz xampp/htdocs.
 2.	Ieslēdzām serveri.
 3.	Atveram jebkurā interneta pārlūkprogrammā vietni http://localhost/wlacar/. 
+
+Admin profile.
+login: admin   
+parole: 777777
+________________________|
+Lietotaja profile.
+e-pasts: warham98@gmail.com
+parole: 111111
