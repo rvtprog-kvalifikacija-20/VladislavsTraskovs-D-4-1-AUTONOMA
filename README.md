@@ -22,10 +22,9 @@ Uzstādīšanas instrukcijas: Lejupielādēt projektu un sekojiet instrukcijai z
 2.	Ieslēdzām serveri.
 3.	Atveram jebkurā interneta pārlūkprogrammā vietni http://localhost/wlacar/. 
 
-Admin profile.
+Admin profile:
 login: admin   
 parole: 777777
-________________________|
-Lietotaja profile.
+Lietotaja profile:
 e-pasts: warham98@gmail.com
 parole: 111111
